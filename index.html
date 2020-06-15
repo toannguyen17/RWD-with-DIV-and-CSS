@@ -1,0 +1,144 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title>
+    <style>
+        *, *:after, *:before {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            background: #f6f6f6;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            margin: 0;
+            padding: 0;
+        }
+        .white {
+            background: white;
+        }
+
+        .shadow_1 {
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        #head {
+            height: 56px;
+            line-height: 56px;
+            margin-bottom: 12px;
+        }
+        .regBox {
+            max-width: 1000px;
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        #head .logo {
+            width: 200px;
+            padding: 0 30px;
+            color: #fff;
+            font-weight: bold;
+            height: 56px;
+            background: #FF5722;
+        }
+
+        #head-link {
+            height: 45px;
+            line-height: 45px;
+            margin-bottom: 20px;
+        }
+
+        #s-body {
+        }
+
+        #left {
+            display: inline-block;
+            width: 15%;
+            float: left;
+        }
+        #content {
+            display: inline-block;
+            width: 60%;
+            float: left;
+        }
+        #right {
+            display: inline-block;
+            width: 25%;
+            float: right;
+        }
+
+        .clearb {
+            clear: both;
+        }
+
+        #footer {
+            height: 36px;
+            margin-top: 12px;
+            line-height: 36px;
+        }
+
+        @media screen and (max-width: 750px){
+            #left {
+                width: 30%;
+            }
+            #content {
+                width: 70%;
+            }
+            #right {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 380px){
+            #left {
+                display: block;
+                width: 100%;
+            }
+            #content {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .content {
+            margin: 3px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="head" class="shadow_1 white">
+        <div class="regBox">
+            <div class="logo">Logo</div>
+        </div>
+    </div>
+    <div id="head-link" class="shadow_1 white">
+        <div class="regBox">Link</div>
+    </div>
+    <div id="s-body" class="regBox">
+        <div id="left">
+            <div class="content shadow_1 white">
+                1
+            </div>
+        </div>
+        <div id="content">
+            <div class="content shadow_1 white">
+                2
+            </div>
+        </div>
+        <div id="right">
+            <div class="content shadow_1 white">
+                3
+            </div>
+        </div>
+    </div>
+    <div class="clearb"></div>
+    <div id="footer" class="shadow_1 white">
+        <div class="regBox">
+            footer
+        </div>
+    </div>
+</div>
+</body>
+</html>
